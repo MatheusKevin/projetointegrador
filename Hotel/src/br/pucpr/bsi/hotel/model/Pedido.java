@@ -22,7 +22,8 @@ public class Pedido {
         this.pagamentos.add(pagamento);
         this.cliente = cliente;
         this.fornecedor = fornecedor;
-        this.cliente.
+        this.cliente.addPedidos(this);
+        this.fornecedor.addPedidos(this);
     }
     
     public void addItem(Item item){
