@@ -8,8 +8,7 @@ public class Reserva extends Item{
     private Pessoa hospede;
     private Quarto quarto;
     
-    public Reserva(Pedido pedido, Quarto quarto, Pessoa hospede) {
-        super(pedido);
+    public Reserva(Quarto quarto, Pessoa hospede) {
         this.quarto = quarto;
         this.hospede =  hospede;
         this.quarto.addReserva(this);

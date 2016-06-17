@@ -5,7 +5,7 @@ public class ItemProduto extends Item{
     private Produto produto;
     
     public ItemProduto(Pedido pedido, Produto produto) {
-        super(pedido);
+        super.setPedido(pedido);
         this.produto = produto;
         this.produto.addItemProduto(this);
     }

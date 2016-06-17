@@ -5,9 +5,6 @@ public abstract class Item {
     private Double valor;
     private Pedido pedido;
 
-    protected Item(Pedido pedido) {
-        this.pedido = pedido;
-    }
 
     public Integer getId() {
         return id;
@@ -31,6 +28,7 @@ public abstract class Item {
 
     public void setPedido(Pedido pedido) {
         this.pedido = pedido;
+        this.pedido.addItem(this);
     }
     
     
