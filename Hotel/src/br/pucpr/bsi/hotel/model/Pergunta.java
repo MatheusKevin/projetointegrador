@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pergunta {
+    private Integer id;
     private Integer numero;
     private String Texto;
     private List<Resposta> respostas;
@@ -16,6 +17,15 @@ public class Pergunta {
         this.respostas.add(resposta);
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    
     public Integer getNumero() {
         return numero;
     }

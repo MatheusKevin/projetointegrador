@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Quarto {
+    private Integer id;
     private Integer numero;
     private Integer andar;
     private Categoria categoria;
@@ -24,6 +25,14 @@ public class Quarto {
     
     public void addReserva(Reserva reserva){
         this.reservas.add(reserva);
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
     
     public Integer getNumero() {
